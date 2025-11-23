@@ -24,6 +24,7 @@ class SpacePhoto:
         self.title = data.get("title", "Без назви")
         self.description = data.get("explanation", "Немає опису")
         self.image_url = data.get("url", "")
+        return data
 
 
         self.description = deepl_client.translate_text(self.description, target_lang="UK")
